@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0d852bba2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              mycolor: "#a3d4cb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex flex-col gap-[30px] items-center min-h-[100vh] bg-gray-700 text-bold border-gray-100 mt-[100px] text-white"
+  >
+    <div id=" flex flex-row w-[1000px]">
+      <button
+        id="btndelete"
+        class="float-right flex fl px-8 py-1 font-semibold border rounded dark:border-gray-100 dark:text-gray-100 ml-[10px]"
+      >
+        Delete ALL
+      </button>
+      <input
+        type="text"
+        id="addtaskinput"
+        class="px-[10px] py-[3px] rounded-lg text-black"
+        placeholder="Type the Task "
+      />
+      <input type="hidden" id="saveindex" class="text-black" />
+
+      <button
+        id="addbtn"
+        class="float-right px-8 py-1 font-semibold border rounded dark:border-gray-100 dark:text-gray-100 ml-[10px]"
+      >
+        ADD
+      </button>
+
+      <button
+        id="savebtn"
+        class="float-right flex flex-row px-8 py-1 font-semibold border rounded dark:border-gray-100 dark:text-gray-100"
+        style="display: none"
+      >
+        Save
+      </button>
+
+      <div class="xyz flex flex-col mt-[50px]">
+        <table id="addedTaskList" class=""></table>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
