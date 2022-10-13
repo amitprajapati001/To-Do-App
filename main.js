@@ -35,7 +35,7 @@ function showTask() {
   taskObj.forEach((item, index) => {
     html += `<tr class="">
     
-    <th>${index + 1}</th>
+    <th class="pt-[10px] ">${index + 1}</th>
     <td class="pt-[10px] ml-[10px] flex flex-wrap md:flex-wrap-reverse w-[200px]">${item}</td>
     <td><button class=" md:ml-[130px] text-sm flex flex-row md:px-8 px-2 py-[2px] font-semibold text-xs border rounded dark:border-gray-100 dark:text-gray-100" onclick="edittask(${index})">Edit</button></td>
     <td><button class="float-right flex flex-row md:px-8 px-2 py-1 text-xs font-semibold border rounded dark:border-gray-100 dark:text-gray-100" onclick="deleteitem(${index})">Delete</button></td>
