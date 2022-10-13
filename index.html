@@ -27,38 +27,45 @@
   <body
     class="flex flex-col gap-[30px] items-center min-h-[100vh] bg-gray-700 text-bold border-gray-100 mt-[100px] text-white"
   >
-    <div id=" flex flex-row w-[1000px]">
+    <div id=" flex flex-row ">
       <button
         id="btndelete"
-        class="float-right flex fl px-8 py-1 font-semibold border rounded dark:border-gray-100 dark:text-gray-100 ml-[10px]"
+        class="float-right flex fl md:px-8 py-1 text-xs md:text-[20px] px-[5px] font-semibold border rounded dark:border-gray-100 dark:text-gray-100 ml-[10px]"
       >
         Delete ALL
       </button>
       <input
         type="text"
         id="addtaskinput"
-        class="px-[10px] py-[3px] rounded-lg text-black"
+        class="md:px-[10px] px-[3px] py-[3px] rounded-lg text-black md:ml-[1px] w-[150px] md:w-[200px]"
         placeholder="Type the Task "
       />
-      <input type="hidden" id="saveindex" class="text-black" />
+      <input
+        type="hidden"
+        id="saveindex"
+        class="text-black md:px-[10px] px-[6px]"
+      />
 
       <button
         id="addbtn"
-        class="float-right px-8 py-1 font-semibold border rounded dark:border-gray-100 dark:text-gray-100 ml-[10px]"
+        class="float-right md:px-8 py-1 px-[5px] text-xs md:text-[20px] font-semibold border rounded dark:border-gray-100 dark:text-gray-100 ml-[10px]"
       >
         ADD
       </button>
 
       <button
         id="savebtn"
-        class="float-right flex flex-row px-8 py-1 font-semibold border rounded dark:border-gray-100 dark:text-gray-100"
+        class="float-right flex flex-row md:px-8 py-1 px-[5px] font-semibold border rounded dark:border-gray-100 dark:text-gray-100"
         style="display: none"
       >
         Save
       </button>
 
-      <div class="xyz flex flex-col mt-[50px]">
-        <table id="addedTaskList" class=""></table>
+      <div class="xyz flex-col mt-[50px] flex flex-wrap md:flex-wrap-reverse">
+        <table
+          id="addedTaskList"
+          class="flex flex-wrap md:flex-wrap-reverse"
+        ></table>
       </div>
     </div>
     <script src="./main.js"></script>
